@@ -84,6 +84,16 @@ body
   cursor: default;
 }
 
+a
+{
+  color:#f0b0b0;
+}
+
+a:hover
+{
+  color:#fff0f0;
+}
+
 
 @media screen and (max-width: 8in) {
   .mid-column {
@@ -152,7 +162,7 @@ function clicked(element)
 
       setTimeout(function(){ 
 	alert("Excellent! You chose the numbers "+selectedNumbers+" Please tweet your choice on the next page to enter Barbara Avon's \"lottery\" to win a surprise prize package that includes a signed copy of Windfall!");
-	var text="I participated in @barb_avon's Windfall \"lottery\" #WindfallBarbaraAvon and chose the numbers "+selectedNumbers+" https://barbaraavon.github.io/windfall/index.html?v=1"; 
+	var text="I participated in Barbara Avon's Windfall \"lottery\" #WindfallBarbaraAvon and chose the numbers "+selectedNumbers+" https://barbaraavon.github.io/windfall/index.html?v=1"; 
 	text=escape(text);
 	document.location.replace("https://twitter.com/intent/tweet?text="+text); 
       }, 100);
@@ -167,7 +177,7 @@ function clicked(element)
 <center>
 <div class='mid-column'>
   <h1>Do you have what it takes to catch a &ldquo;Windfall&rdquo;?</h1>
-  <h3>Win a surprise prize package that includes a signed copy of Barbara's latest book Windfall!</h3>
+  <h3>Win a surprise prize package that includes a signed copy of <a href='https://twitter.com/barb_avon' target='twitter-tab'>Barbara Avon's</a> latest book Windfall!</h3>
 <img width='30%' src='windfall-cover.jpg' />
 
   <h1>Pick three numbers, tweet your choice to win!</h1>
